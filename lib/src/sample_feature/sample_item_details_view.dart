@@ -15,7 +15,9 @@ class SampleItemDetailsView extends StatelessWidget {
         title: Text(title),
       ),
       body: const Center(
-        child: Text('More Information Here'),
+        child: Text('Hello, World!',
+          style: TextStyle(fontSize: 36),
+        ),
       ),
     );
   }
