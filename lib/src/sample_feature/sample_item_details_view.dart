@@ -8,9 +8,11 @@ class SampleItemDetailsView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final title = ModalRoute.of(context)?.settings.arguments as String;
+
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Item Details'),
+        title: Text(title),
       ),
       body: const Center(
         child: Text('More Information Here'),
