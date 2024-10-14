@@ -9,9 +9,10 @@ class SampleItemListView extends StatelessWidget {
   const SampleItemListView({
     super.key,
     this.items = const [
-      SampleItem(1, "Nettverk i Oslo"),
-      SampleItem(2, "Nettvrek i Bergen"),
-      SampleItem(3, "Om oss")],
+      SampleItem(1, "Nettverk i Oslo", "assets/images/oslo_logo.png"),
+      SampleItem(2, "Nettvek i Bergen", "assets/images/bergen_logo.png"),
+      SampleItem(3, "Om oss", "assets/images/flutter_logo.png")
+    ],
   });
 
   static const routeName = '/';
@@ -53,9 +54,9 @@ class SampleItemListView extends StatelessWidget {
 
           return ListTile(
             title: Text(item.title),
-            leading: const CircleAvatar(
+            leading: CircleAvatar(
               // Display the Flutter Logo image asset.
-              foregroundImage: AssetImage('assets/images/flutter_logo.png'),
+              foregroundImage: AssetImage(item.logo),
             ),
             onTap: () {
               // Navigate to the details page. If the user leaves and returns to
