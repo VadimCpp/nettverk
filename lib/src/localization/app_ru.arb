@@ -1,0 +1,10 @@
+{
+  "appTitle": "сеть",
+  "@appTitle": {
+    "description": "Название приложения"
+  },
+  "helloWorld": "Привет, Мир!",
+  "@helloWorld": {
+    "description": "Приветственное сообщение"
+  }
+}

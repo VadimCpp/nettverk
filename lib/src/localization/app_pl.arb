@@ -1,0 +1,10 @@
+{
+  "appTitle": "sieć",
+  "@appTitle": {
+    "description": "Tytuł aplikacji"
+  },
+  "helloWorld": "Witaj, Świecie!",
+  "@helloWorld": {
+    "description": "Powitanie"
+  }
+}

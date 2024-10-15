@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 /// Displays detailed information about a SampleItem.
 class SampleItemDetailsView extends StatelessWidget {
@@ -14,9 +15,9 @@ class SampleItemDetailsView extends StatelessWidget {
       appBar: AppBar(
         title: Text(title),
       ),
-      body: const Center(
-        child: Text('Hello, World!',
-          style: TextStyle(fontSize: 36),
+      body: Center(
+        child: Text(AppLocalizations.of(context)!.helloWorld,
+          style: const TextStyle(fontSize: 36),
         ),
       ),
     );

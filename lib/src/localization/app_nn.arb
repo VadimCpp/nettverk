@@ -1,0 +1,10 @@
+{
+  "appTitle": "Nettverk",
+  "@appTitle": {
+    "description": "Tittelen på applikasjonen"
+  },
+  "helloWorld": "Hei, Verda!",
+  "@helloWorld": {
+    "description": "Ei helsing"
+  }
+}

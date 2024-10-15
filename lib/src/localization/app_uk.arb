@@ -1,0 +1,10 @@
+{
+  "appTitle": "мережа",
+  "@appTitle": {
+    "description": "Назва додатка"
+  },
+  "helloWorld": "Привіт, Світ!",
+  "@helloWorld": {
+    "description": "Привітальне повідомлення"
+  }
+}

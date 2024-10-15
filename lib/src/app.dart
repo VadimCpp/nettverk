@@ -42,7 +42,12 @@ class MyApp extends StatelessWidget {
             GlobalCupertinoLocalizations.delegate,
           ],
           supportedLocales: const [
+            Locale('nb', ''), // Norsk Bokmål, no country code
+            Locale('nn', ''), // Norsk Nynorsk, no country code
+            Locale('uk', ''), // Ukrainian, no country code
             Locale('en', ''), // English, no country code
+            Locale('ru', ''), // Russian, no country code
+            Locale('pl', ''), // Polish, no country code
           ],
 
           // Use AppLocalizations to configure the correct application title
