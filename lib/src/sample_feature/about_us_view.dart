@@ -18,7 +18,7 @@ class AboutUsView extends StatelessWidget {
             style: Theme.of(context).textTheme.bodyMedium,
           ),
         ),
-        const SizedBox(height: 20),
+        const SizedBox(height: 40),
         ElevatedButton(
           onPressed: () {
             // Navigate back to home screen

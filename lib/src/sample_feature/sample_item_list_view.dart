@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 import '../settings/settings_view.dart';
 import 'sample_item.dart';
@@ -11,16 +12,20 @@ class SampleItemListView extends StatelessWidget {
     this.items = const [
       SampleItem(1, "Nettverk i Oslo", "assets/images/oslo_logo.png"),
       SampleItem(2, "Nettvek i Bergen", "assets/images/bergen_logo.png"),
-      SampleItem(3, "Om oss", "assets/images/borinorge_logo.png")
     ],
   });
 
   static const routeName = '/';
 
   final List<SampleItem> items;
-
+  
   @override
   Widget build(BuildContext context) {
+    final localizedItems = [
+      ...items,
+      SampleItem(3, AppLocalizations.of(context)!.aboutUs, "assets/images/borinorge_logo.png"),
+    ];
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Sample Items'),
@@ -44,13 +49,10 @@ class SampleItemListView extends StatelessWidget {
       // building all Widgets up front, the ListView.builder constructor lazily
       // builds Widgets as they’re scrolled into view.
       body: ListView.builder(
-        // Providing a restorationId allows the ListView to restore the
-        // scroll position when a user leaves and returns to the app after it
-        // has been killed while running in the background.
+        itemCount: localizedItems.length,
         restorationId: 'sampleItemListView',
-        itemCount: items.length,
         itemBuilder: (BuildContext context, int index) {
-          final item = items[index];
+          final item = localizedItems[index];
 
           return ListTile(
             title: Text(item.title),
