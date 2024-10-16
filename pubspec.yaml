@@ -14,6 +14,7 @@ dependencies:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
+  flutter_native_splash: ^2.4.1
 
 dev_dependencies:
   flutter_test:
@@ -30,3 +31,11 @@ flutter:
   assets:
     # Add assets from the images directory to the application.
     - assets/images/
+
+flutter_native_splash:
+  color: "#FFF7FF" # background color of your splash screen (use hex format)
+  image: assets/splash.png # your splash screen image
+  android: true
+  ios: true
+  web: false
+
