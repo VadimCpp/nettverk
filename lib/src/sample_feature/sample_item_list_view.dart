@@ -11,7 +11,7 @@ class SampleItemListView extends StatelessWidget {
     this.items = const [
       SampleItem(1, "Nettverk i Oslo", "assets/images/oslo_logo.png"),
       SampleItem(2, "Nettvek i Bergen", "assets/images/bergen_logo.png"),
-      SampleItem(3, "Om oss", "assets/images/flutter_logo.png")
+      SampleItem(3, "Om oss", "assets/images/borinorge_logo.png")
     ],
   });
 
