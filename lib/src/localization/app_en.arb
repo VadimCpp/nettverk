@@ -3,9 +3,9 @@
   "@appTitle": {
     "description": "The title of the application"
   },
-  "helloWorld": "Hello, World!",
-  "@helloWorld": {
-    "description": "A greeting message"
+  "welcome": "Welcome",
+  "@welcome": {
+    "description": "The title of the home page"
   },
   "aboutUs": "About us",
   "@aboutUs": {
@@ -14,5 +14,9 @@
   "aboutNettverk": "Nettverk is a place for those who have recently moved to Norway and wish to actively participate in Norwegian society. The goal is to bridge cultures through ideas for meeting places and volunteer work, and to assist those who have recently moved to Norway with answers to questions related to integration.",
   "@aboutNettverk": {
     "description": "An explanation about the project"
+  },
+  "joinTelegramChat": "We use Telegram to communicate with our members. Join our chat to stay updated!",
+  "@joinTelegramChat": {
+    "description": "An invitation to join community's chat in Telegram"
   }
 }

@@ -3,9 +3,9 @@
   "@appTitle": {
     "description": "Tittelen på applikasjonen"
   },
-  "helloWorld": "Hei, Verden!",
-  "@helloWorld": {
-    "description": "En hilsen"
+  "welcome": "Velkommen",
+  "@welcome": {
+    "description": "Tittelen på startsiden"
   },
   "aboutUs": "Om oss",
   "@aboutUs": {
@@ -14,5 +14,9 @@
   "aboutNettverk": "Nettverk er et sted for deg som nylig har flyttet til Norge og ønsker å delta aktivt i det norske samfunnet. Målet er å bygge bro mellom kulturer gjennom ideer til møteplasser og frivillig arbeid, og å bistå deg som nylig har flytte til Norge med svar på spørsmål relatert til integrering.",
   "@aboutNettverk": {
     "description": "En forklaring om prosjektet"
+  },
+  "joinTelegramChat": "Vi bruker Telegram for å kommunisere med våre medlemmer. Bli med i chatten vår for å holde deg oppdatert!",
+  "@joinTelegramChat": {
+    "description": "En invitasjon til å bli med i fellesskapets chat på Telegram"
   }
 }

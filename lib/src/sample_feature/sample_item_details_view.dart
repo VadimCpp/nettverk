@@ -29,11 +29,7 @@ class SampleItemDetailsView extends StatelessWidget {
     final Map<String, dynamic> args = ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>;
     final SampleItem item = SampleItem.fromMap(args);
     
-    Widget body = Center(
-      child: Text(AppLocalizations.of(context)!.helloWorld,
-        style: const TextStyle(fontSize: 36),
-      ),
-    );
+    Widget body;
     if (item.id == 3) {
       body = const AboutUsView();
     } else {
@@ -53,7 +49,7 @@ class SampleItemDetailsView extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(left: 20, right: 20),
             child: Text(
-              "We use Telegram to communicate with our members. Join our chat to stay updated!",
+              AppLocalizations.of(context)!.joinTelegramChat,
               textAlign: TextAlign.center,
               style: Theme.of(context).textTheme.bodyMedium,
             ),

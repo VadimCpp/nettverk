@@ -3,9 +3,9 @@
   "@appTitle": {
     "description": "Tytuł aplikacji"
   },
-  "helloWorld": "Witaj, Świecie!",
-  "@helloWorld": {
-    "description": "Powitanie"
+  "welcome": "Witamy",
+  "@welcome": {
+    "description": "Tytuł strony głównej"
   },
   "aboutUs": "O nas",
   "@aboutUs": {
@@ -14,5 +14,9 @@
   "aboutNettverk": "Nettverk to miejsce dla tych, którzy niedawno przeprowadzili się do Norwegii i pragną aktywnie uczestniczyć w norweskim społeczeństwie. Celem jest budowanie mostów między kulturami poprzez pomysły na miejsca spotkań oraz pracę wolontariacką, a także pomoc tym, którzy niedawno przeprowadzili się do Norwegii, w znalezieniu odpowiedzi na pytania związane z integracją.",
   "@aboutNettverk": {
     "description": "Wyjaśnienie na temat projektu"
+  },
+  "joinTelegramChat": "Używamy Telegramu do komunikacji z naszymi członkami. Dołącz do naszego czatu, aby być na bieżąco!",
+  "@joinTelegramChat": {
+    "description": "Zaproszenie do dołączenia do czatu społeczności na Telegramie"
   }
 }

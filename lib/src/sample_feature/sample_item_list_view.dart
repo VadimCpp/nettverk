@@ -10,7 +10,7 @@ class SampleItemListView extends StatelessWidget {
   const SampleItemListView({
     super.key,
     this.items = const [
-      SampleItem(1, "Nettverk i Oslo", "assets/images/oslo_logo.png", "assets/images/ai_oslo.jpg", "nettverk"),
+      SampleItem(1, "Nettverk i Oslo", "assets/images/oslo_logo.png", "assets/images/ai_oslo.jpg", "oslouk"),
       SampleItem(2, "Nettvek i Bergen", "assets/images/bergen_logo.png", "assets/images/ai_bergen.jpg", "bergenvolonterchat"),
     ],
   });
@@ -28,7 +28,7 @@ class SampleItemListView extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Sample Items'),
+        title: Text(AppLocalizations.of(context)!.welcome),
         actions: [
           IconButton(
             icon: const Icon(Icons.settings),
