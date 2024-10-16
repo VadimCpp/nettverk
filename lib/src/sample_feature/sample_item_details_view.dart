@@ -22,6 +22,29 @@ class SampleItemDetailsView extends StatelessWidget {
     );
     if (item.id == 3) {
       body = const AboutUsView();
+    } else {
+      body = Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          const SizedBox(height: 20),
+          Padding(
+            padding: const EdgeInsets.only(left: 20, right: 20),
+            child: Image.asset(
+              item.picture!,
+              width: double.infinity,
+              fit: BoxFit.cover,
+            ),
+          ),
+          const SizedBox(height: 40),
+          ElevatedButton(
+            onPressed: () {
+              // Navigate back to home screen
+              Navigator.of(context).pop();
+            },
+            child: const Text('Back'),
+          ),
+        ],
+      );
     }
 
     return Scaffold(
