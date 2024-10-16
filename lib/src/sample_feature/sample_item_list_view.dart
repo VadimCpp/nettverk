@@ -10,8 +10,8 @@ class SampleItemListView extends StatelessWidget {
   const SampleItemListView({
     super.key,
     this.items = const [
-      SampleItem(1, "Nettverk i Oslo", "assets/images/oslo_logo.png", "assets/images/ai_oslo.jpg"),
-      SampleItem(2, "Nettvek i Bergen", "assets/images/bergen_logo.png", "assets/images/ai_bergen.jpg"),
+      SampleItem(1, "Nettverk i Oslo", "assets/images/oslo_logo.png", "assets/images/ai_oslo.jpg", "nettverk"),
+      SampleItem(2, "Nettvek i Bergen", "assets/images/bergen_logo.png", "assets/images/ai_bergen.jpg", "bergenvolonterchat"),
     ],
   });
 
@@ -23,7 +23,7 @@ class SampleItemListView extends StatelessWidget {
   Widget build(BuildContext context) {
     final localizedItems = [
       ...items,
-      SampleItem(3, AppLocalizations.of(context)!.aboutUs, "assets/images/borinorge_logo.png", null),
+      SampleItem(3, AppLocalizations.of(context)!.aboutUs, "assets/images/borinorge_logo.png", null, null),
     ];
 
     return Scaffold(

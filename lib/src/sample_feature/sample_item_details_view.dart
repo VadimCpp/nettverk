@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'sample_item.dart';
 import 'about_us_view.dart';
 
@@ -8,6 +9,19 @@ class SampleItemDetailsView extends StatelessWidget {
   const SampleItemDetailsView({super.key});
 
   static const routeName = '/sample_item';
+
+  Future<void> _openTelegram(String chatName) async {
+    final Uri telegramAppUrl = Uri.parse('tg://resolve?domain=$chatName'); // For Telegram app
+    final Uri telegramWebUrl = Uri.parse('https://t.me/$chatName'); // Fallback for browser
+
+    if (await canLaunchUrl(telegramAppUrl)) {
+      await launchUrl(telegramAppUrl, mode: LaunchMode.externalApplication);
+    } else if (await canLaunchUrl(telegramWebUrl)) {
+      await launchUrl(telegramWebUrl, mode: LaunchMode.externalApplication);
+    } else {
+      throw 'Could not open Telegram chat.';
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -36,12 +50,20 @@ class SampleItemDetailsView extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 40),
+          Padding(
+            padding: const EdgeInsets.only(left: 20, right: 20),
+            child: Text(
+              "We use Telegram to communicate with our members. Join our chat to stay updated!",
+              textAlign: TextAlign.center,
+              style: Theme.of(context).textTheme.bodyMedium,
+            ),
+          ),
+          const SizedBox(height: 20),
           ElevatedButton(
             onPressed: () {
-              // Navigate back to home screen
-              Navigator.of(context).pop();
+              _openTelegram(item.chatName!);
             },
-            child: const Text('Back'),
+            child: const Text('Telegram chat'),
           ),
         ],
       );

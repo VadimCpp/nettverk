@@ -1,11 +1,12 @@
 /// A placeholder class that represents an entity or model.
 class SampleItem {
-  const SampleItem(this.id, this.title, this.logo, this.picture);
+  const SampleItem(this.id, this.title, this.logo, this.picture, this.chatName);
 
   final int id;
   final String title;
   final String logo;
   final String? picture;
+  final String? chatName;
 
   // Convert SampleItem to a map for serialization
   Map<String, dynamic> toMap() {
@@ -14,6 +15,7 @@ class SampleItem {
       'title': title,
       'logo': logo,
       'picture': picture,
+      'chatName': chatName,
     };
   }
 
@@ -24,6 +26,7 @@ class SampleItem {
       map['title'] as String,
       map['logo'] as String,
       map['picture'] as String?,
+      map['chatName'] as String?,
     );
   }
 }
