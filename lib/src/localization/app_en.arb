@@ -6,5 +6,9 @@
   "helloWorld": "Hello, World!",
   "@helloWorld": {
     "description": "A greeting message"
+  },
+  "aboutNettverk": "Nettverk is a place for those who have recently moved to Norway and wish to actively participate in Norwegian society. The goal is to bridge cultures through ideas for meeting places and volunteer work, and to assist those who have recently moved to Norway with answers to questions related to integration.",
+  "@aboutNettverk": {
+    "description": "An explanation about the project"
   }
 }

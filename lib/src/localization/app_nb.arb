@@ -6,5 +6,9 @@
   "helloWorld": "Hei, Verden!",
   "@helloWorld": {
     "description": "En hilsen"
+  },
+  "aboutNettverk": "Nettverk er et sted for deg som nylig har flyttet til Norge og ønsker å delta aktivt i det norske samfunnet. Målet er å bygge bro mellom kulturer gjennom ideer til møteplasser og frivillig arbeid, og å bistå deg som nylig har flytte til Norge med svar på spørsmål relatert til integrering.",
+  "@aboutNettverk": {
+    "description": "En forklaring om prosjektet"
   }
 }
