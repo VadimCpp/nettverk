@@ -5,4 +5,22 @@ class SampleItem {
   final int id;
   final String title;
   final String logo;
+
+  // Convert SampleItem to a map for serialization
+  Map<String, dynamic> toMap() {
+    return {
+      'id': id,
+      'title': title,
+      'logo': logo,
+    };
+  }
+
+  // Create a SampleItem from a map for deserialization
+  factory SampleItem.fromMap(Map<String, dynamic> map) {
+    return SampleItem(
+      map['id'] as int,
+      map['title'] as String,
+      map['logo'] as String,
+    );
+  }
 }
