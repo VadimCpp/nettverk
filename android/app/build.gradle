@@ -8,7 +8,11 @@ plugins {
 android {
     namespace = "no.tekzence.nettverk"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    
+    // NOTE! Avoid default ndk version in order to fix url_launcher_android
+    // https://stackoverflow.com/questions/77228813/where-is-defined-flutter-ndkversion-in-build-gradle
+    // ndkVersion = flutter.ndkVersion
+    ndkVersion = "27.0.12077973"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -41,4 +45,10 @@ android {
 
 flutter {
     source = "../.."
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
 }
