@@ -79,6 +79,9 @@ class _MyAppState extends State<MyApp> {
             Locale('pl', ''), // Polish, no country code
           ],
 
+          // Hide the debug banner in debug mode
+          debugShowCheckedModeBanner: false,
+
           // Use AppLocalizations to configure the correct application title
           // depending on the user's locale.
           //
