@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -10,17 +12,55 @@ class SampleItemDetailsView extends StatelessWidget {
 
   static const routeName = '/sample_item';
 
-  Future<void> _openTelegram(String chatName) async {
+  Future<void> _openTelegram(BuildContext context, String chatName) async {
     final Uri telegramAppUrl = Uri.parse('tg://resolve?domain=$chatName'); // For Telegram app
     final Uri telegramWebUrl = Uri.parse('https://t.me/$chatName'); // Fallback for browser
 
-    if (await canLaunchUrl(telegramAppUrl)) {
-      await launchUrl(telegramAppUrl, mode: LaunchMode.externalApplication);
-    } else if (await canLaunchUrl(telegramWebUrl)) {
-      await launchUrl(telegramWebUrl, mode: LaunchMode.externalApplication);
-    } else {
-      throw 'Could not open Telegram chat.';
+    bool isLaunched = false;
+    String errorMessage = 'Error launching Telegram chat';
+    try {
+      if (await launchUrl(telegramAppUrl)) {
+        isLaunched = true;
+      }
     }
+    catch (e) {
+      errorMessage = 'Error launching Telegram app: $e';
+      isLaunched = false;
+    }
+
+    if (!isLaunched) {
+      try {
+        if (await launchUrl(telegramWebUrl)) {
+          isLaunched = true;
+        }
+      }
+      catch (e) {
+        errorMessage = 'Error launching Telegram website: $e';
+        isLaunched = false;
+      }
+    }
+
+    if (!isLaunched) {
+      showDialog(
+        barrierDismissible: false, // User must tap a button to dismiss
+        context: context,
+        builder: (BuildContext context) {
+          return AlertDialog(
+            title: const Text("Error"),
+            content: Text(errorMessage),
+            actions: [
+              TextButton(
+                child: const Text("Cancel"),
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+              ),
+            ],
+          );
+        },
+      );
+    }
+
   }
 
   @override
@@ -57,7 +97,7 @@ class SampleItemDetailsView extends StatelessWidget {
           const SizedBox(height: 20),
           ElevatedButton(
             onPressed: () {
-              _openTelegram(item.chatName!);
+              _openTelegram(context, item.chatName!);
             },
             child: const Text('Telegram chat'),
           ),
