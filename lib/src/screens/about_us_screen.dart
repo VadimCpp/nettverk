@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:go_router/go_router.dart';
 
 class AboutUsScreen extends StatelessWidget {
   const AboutUsScreen({super.key});
@@ -21,8 +22,7 @@ class AboutUsScreen extends StatelessWidget {
         const SizedBox(height: 40),
         ElevatedButton(
           onPressed: () {
-            // Navigate back to home screen
-            Navigator.of(context).pop();
+            context.pop();
           },
           child: const Text('Back'),
         ),

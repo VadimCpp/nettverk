@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:go_router/go_router.dart';
 import 'package:nettverk/src/models/index.dart';
-import 'package:nettverk/src/screens/index.dart';
 
 /// Displays a list of Chats.
 class HomeScreen extends StatelessWidget {
@@ -32,10 +31,7 @@ class HomeScreen extends StatelessWidget {
           IconButton(
             icon: const Icon(Icons.settings),
             onPressed: () {
-              // Navigate to the settings page. If the user leaves and returns
-              // to the app after it has been killed while running in the
-              // background, the navigation stack is restored.
-              Navigator.restorablePushNamed(context, SettingsScreen.routeName);
+              context.push('settings');
             },
           ),
         ],
