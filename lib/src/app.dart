@@ -77,7 +77,7 @@ class NettverkApp extends StatelessWidget {
           builder: (BuildContext context) {
             switch (routeSettings.name) {
               case SettingsScreen.routeName:
-                return SettingsScreen(controller: settingsController);
+                return const SettingsScreen();
               case ChatScreen.routeName:
                 return const ChatScreen();
               case HomeScreen.routeName:
