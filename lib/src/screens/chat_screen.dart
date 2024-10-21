@@ -71,35 +71,38 @@ class ChatScreen extends StatelessWidget {
     if (item.id == 3) {
       body = const AboutUsView();
     } else {
-      body = Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          const SizedBox(height: 20),
-          Padding(
-            padding: const EdgeInsets.only(left: 20, right: 20),
-            child: Image.asset(
-              item.picture!,
-              width: double.infinity,
-              fit: BoxFit.cover,
+      body =  SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            const SizedBox(height: 20),
+            Padding(
+              padding: const EdgeInsets.only(left: 20, right: 20),
+              child: Image.asset(
+                item.picture!,
+                width: double.infinity,
+                fit: BoxFit.cover,
+              ),
             ),
-          ),
-          const SizedBox(height: 40),
-          Padding(
-            padding: const EdgeInsets.only(left: 20, right: 20),
-            child: Text(
-              AppLocalizations.of(context)!.joinTelegramChat,
-              textAlign: TextAlign.center,
-              style: Theme.of(context).textTheme.bodyMedium,
+            const SizedBox(height: 40),
+            Padding(
+              padding: const EdgeInsets.only(left: 20, right: 20),
+              child: Text(
+                AppLocalizations.of(context)!.joinTelegramChat,
+                textAlign: TextAlign.center,
+                style: Theme.of(context).textTheme.bodyMedium,
+              ),
             ),
-          ),
-          const SizedBox(height: 20),
-          ElevatedButton(
-            onPressed: () {
-              _openTelegram(context, item.chatName!);
-            },
-            child: const Text('Telegram chat'),
-          ),
-        ],
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                _openTelegram(context, item.chatName!);
+              },
+              child: const Text('Telegram chat'),
+            ),
+            const SizedBox(height: 60),
+          ],
+        )
       );
     }
 
