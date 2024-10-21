@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'sample_item.dart';
-import 'about_us_view.dart';
+import 'package:nettverk/src/models/index.dart';
+import 'package:nettverk/src/screens/index.dart';
 
-/// Displays detailed information about a SampleItem.
-class SampleItemDetailsView extends StatelessWidget {
-  const SampleItemDetailsView({super.key});
+/// Displays detailed information about a Chat.
+class ChatScreen extends StatelessWidget {
+  const ChatScreen({super.key});
 
   static const routeName = '/sample_item';
 
@@ -63,9 +63,9 @@ class SampleItemDetailsView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Deserialize the arguments back to a SampleItem
+    // Deserialize the arguments back to a Chat
     final Map<String, dynamic> args = ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>;
-    final SampleItem item = SampleItem.fromMap(args);
+    final Chat item = Chat.fromMap(args);
     
     Widget body;
     if (item.id == 3) {

@@ -2,11 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
-
-import 'sample_feature/sample_item_details_view.dart';
-import 'sample_feature/sample_item_list_view.dart';
-import 'settings/settings_controller.dart';
-import 'settings/settings_view.dart';
+import 'package:nettverk/src/screens/index.dart';
+import 'package:nettverk/src/controllers/index.dart';
 
 class MyApp extends StatefulWidget {
   const MyApp({
@@ -104,13 +101,13 @@ class _MyAppState extends State<MyApp> {
               settings: routeSettings,
               builder: (BuildContext context) {
                 switch (routeSettings.name) {
-                  case SettingsView.routeName:
-                    return SettingsView(controller: widget.settingsController);
-                  case SampleItemDetailsView.routeName:
-                    return const SampleItemDetailsView();
-                  case SampleItemListView.routeName:
+                  case SettingsScreen.routeName:
+                    return SettingsScreen(controller: widget.settingsController);
+                  case ChatScreen.routeName:
+                    return const ChatScreen();
+                  case HomeScreen.routeName:
                   default:
-                    return const SampleItemListView();
+                    return const HomeScreen();
                 }
               },
             );
