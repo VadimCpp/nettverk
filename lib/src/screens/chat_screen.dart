@@ -65,11 +65,11 @@ class ChatScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Widget body;
-    if (chat.id == 3) {
-      body = const AboutUsScreen();
-    } else {
-      body =  SingleChildScrollView(
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(chat.title),
+      ),
+      body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
@@ -101,14 +101,7 @@ class ChatScreen extends StatelessWidget {
             const SizedBox(height: 60),
           ],
         )
-      );
-    }
-
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(chat.title),
       ),
-      body: body,
     );
   }
 }

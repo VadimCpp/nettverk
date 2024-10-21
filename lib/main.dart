@@ -18,9 +18,20 @@ void main() async {
   // This prevents a sudden theme change when the app is first displayed.
   await settingsController.loadSettings();
 
+  // Set up the ItemsController, which will glue the list of items to multiple
+  // Flutter Widgets.
+  final itemsController = ItemsController();
+
   runApp(
-    ChangeNotifierProvider<SettingsController>(
-      create: (context) => settingsController,
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider<SettingsController>(
+          create: (context) => settingsController,
+        ),
+        ChangeNotifierProvider<ItemsController>(
+          create: (context) => itemsController,
+        ),
+      ],
       child: const NettverkApp(),
     ),
   );
