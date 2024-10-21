@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:provider/provider.dart';
 import 'package:nettverk/src/services/index.dart';
 import 'package:nettverk/src/controllers/index.dart';
 
@@ -17,8 +18,10 @@ void main() async {
   // This prevents a sudden theme change when the app is first displayed.
   await settingsController.loadSettings();
 
-  // Run the app and pass in the SettingsController. The app listens to the
-  // SettingsController for changes, then passes it further down to the
-  // SettingsScreen.
-  runApp(MyApp(settingsController: settingsController));
+  runApp(
+    ChangeNotifierProvider<SettingsController>(
+      create: (context) => settingsController,
+      child: const NettverkApp(),
+    ),
+  );
 }
