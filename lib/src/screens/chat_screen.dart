@@ -6,7 +6,8 @@ import 'package:nettverk/src/screens/index.dart';
 
 /// Displays detailed information about a Chat.
 class ChatScreen extends StatelessWidget {
-  const ChatScreen({super.key});
+  final Chat chat;
+  const ChatScreen({super.key, required this.chat});
 
   static const routeName = '/sample_item';
 
@@ -63,13 +64,9 @@ class ChatScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Deserialize the arguments back to a Chat
-    final Map<String, dynamic> args = ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>;
-    final Chat item = Chat.fromMap(args);
-    
     Widget body;
-    if (item.id == 3) {
-      body = const AboutUsView();
+    if (chat.id == 3) {
+      body = const AboutUsScreen();
     } else {
       body =  SingleChildScrollView(
         child: Column(
@@ -79,7 +76,7 @@ class ChatScreen extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(left: 20, right: 20),
               child: Image.asset(
-                item.picture!,
+                chat.picture!,
                 width: double.infinity,
                 fit: BoxFit.cover,
               ),
@@ -96,7 +93,7 @@ class ChatScreen extends StatelessWidget {
             const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                _openTelegram(context, item.chatName!);
+                _openTelegram(context, chat.chatName!);
               },
               child: const Text('Telegram chat'),
             ),
@@ -108,7 +105,7 @@ class ChatScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(item.title),
+        title: Text(chat.title),
       ),
       body: body,
     );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:go_router/go_router.dart';
 import 'package:nettverk/src/models/index.dart';
 import 'package:nettverk/src/screens/index.dart';
 
@@ -59,14 +60,7 @@ class HomeScreen extends StatelessWidget {
               foregroundImage: AssetImage(item.logo),
             ),
             onTap: () {
-              // Navigate to the details page. If the user leaves and returns to
-              // the app after it has been killed while running in the
-              // background, the navigation stack is restored.
-              Navigator.restorablePushNamed(
-                context,
-                ChatScreen.routeName,
-                arguments: item.toMap(),
-              );
+              context.push("/chat", extra: item);
             }
           );
         },

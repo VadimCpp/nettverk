@@ -7,26 +7,4 @@ class Chat {
   final String logo;
   final String? picture;
   final String? chatName;
-
-  // Convert Chat to a map for serialization
-  Map<String, dynamic> toMap() {
-    return {
-      'id': id,
-      'title': title,
-      'logo': logo,
-      'picture': picture,
-      'chatName': chatName,
-    };
-  }
-
-  // Create a Chat from a map for deserialization
-  factory Chat.fromMap(Map<String, dynamic> map) {
-    return Chat(
-      map['id'] as int,
-      map['title'] as String,
-      map['logo'] as String,
-      map['picture'] as String?,
-      map['chatName'] as String?,
-    );
-  }
 }
