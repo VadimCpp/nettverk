@@ -7,26 +7,31 @@ class AboutUsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
-        const SizedBox(height: 20),
-        Padding(
-          padding: const EdgeInsets.only(left: 20, right: 20),
-          child: Text(
-            AppLocalizations.of(context)!.aboutNettverk,
-            textAlign: TextAlign.start,
-            style: Theme.of(context).textTheme.bodyMedium,
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("About Us"),
+      ),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          const SizedBox(height: 20),
+          Padding(
+            padding: const EdgeInsets.only(left: 20, right: 20),
+            child: Text(
+              AppLocalizations.of(context)!.aboutNettverk,
+              textAlign: TextAlign.start,
+              style: Theme.of(context).textTheme.bodyMedium,
+            ),
           ),
-        ),
-        const SizedBox(height: 40),
-        ElevatedButton(
-          onPressed: () {
-            context.pop();
-          },
-          child: const Text('Back'),
-        ),
-      ],
+          const SizedBox(height: 40),
+          ElevatedButton(
+            onPressed: () {
+              context.pop();
+            },
+            child: const Text('Back'),
+          ),
+        ],
+      )
     );
   }
 }
