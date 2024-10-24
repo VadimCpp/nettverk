@@ -15,6 +15,10 @@
   "@aboutNettverk": {
     "description": "Wyjaśnienie na temat projektu"
   },
+  "back": "Wstecz",
+  "@back": {
+    "description": "Etykieta przycisku"
+  },
   "joinTelegramChat": "Używamy Telegramu do komunikacji z naszymi członkami. Dołącz do naszego czatu, aby być na bieżąco!",
   "@joinTelegramChat": {
     "description": "Zaproszenie do dołączenia do czatu społeczności na Telegramie"

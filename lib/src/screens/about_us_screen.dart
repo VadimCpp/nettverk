@@ -9,7 +9,7 @@ class AboutUsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("About Us"),
+        title: Text(AppLocalizations.of(context)!.aboutUs),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -28,7 +28,7 @@ class AboutUsScreen extends StatelessWidget {
             onPressed: () {
               context.pop();
             },
-            child: const Text('Back'),
+            child: Text(AppLocalizations.of(context)!.back),
           ),
         ],
       )

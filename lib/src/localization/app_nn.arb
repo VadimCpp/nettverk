@@ -15,6 +15,10 @@
   "@aboutNettverk": {
     "description": "Ei forklaring om prosjektet"
   },
+  "back": "Tilbake",
+  "@back": {
+    "description": "Knappetikett"
+  },
   "joinTelegramChat": "Vi brukar Telegram for å kommunisere med medlemmane våre. Bli med i chatten vår for å halde deg oppdatert!",
   "@joinTelegramChat": {
     "description": "Ei invitasjon til å bli med i fellesskapets chat på Telegram"
