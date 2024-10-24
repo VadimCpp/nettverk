@@ -21,7 +21,7 @@ class HomeScreen extends StatelessWidget {
               IconButton(
                 icon: const Icon(Icons.settings),
                 onPressed: () {
-                  context.push('settings');
+                  context.push('/settings');
                 },
               ),
             ],
