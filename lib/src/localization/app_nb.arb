@@ -3,10 +3,6 @@
   "@appTitle": {
     "description": "Tittelen på applikasjonen"
   },
-  "welcome": "Velkommen",
-  "@welcome": {
-    "description": "Tittelen på startsiden"
-  },
   "welcomeMessage": "Velkommen til vårt koselige og vennlige sted 🤗",
   "@welcomeMessage": {
     "description": "Velkomsttekst på hovedsiden til appen"

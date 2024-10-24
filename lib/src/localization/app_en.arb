@@ -3,10 +3,6 @@
   "@appTitle": {
     "description": "The title of the application"
   },
-  "welcome": "Welcome",
-  "@welcome": {
-    "description": "The title of the home page"
-  },
   "welcomeMessage": "Welcome to our cozy and friendly space 🤗",
   "@welcomeMessage": {
     "description": "Welcoming text on the main app page"

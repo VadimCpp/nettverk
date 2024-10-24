@@ -16,7 +16,7 @@ class HomeScreen extends StatelessWidget {
 
         return Scaffold(
           appBar: AppBar(
-            title: Text(AppLocalizations.of(context)!.welcome),
+            title: Text(AppLocalizations.of(context)!.appTitle),
             actions: [
               IconButton(
                 icon: const Icon(Icons.settings),

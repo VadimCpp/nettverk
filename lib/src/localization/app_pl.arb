@@ -3,10 +3,6 @@
   "@appTitle": {
     "description": "Tytuł aplikacji"
   },
-  "welcome": "Witamy",
-  "@welcome": {
-    "description": "Tytuł strony głównej"
-  },
   "welcomeMessage": "Witamy w naszej przytulnej i przyjaznej przestrzeni 🤗",
   "@welcomeMessage": {
     "description": "Tekst powitalny na głównej stronie aplikacji"
