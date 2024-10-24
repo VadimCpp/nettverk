@@ -74,10 +74,16 @@ class ChatScreen extends StatelessWidget {
             const SizedBox(height: 20),
             Padding(
               padding: const EdgeInsets.only(left: 20, right: 20),
-              child: Image.asset(
-                chat.picture!,
+              child: Container(
                 width: double.infinity,
-                fit: BoxFit.cover,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(8), // Adjust the border radius as needed
+                ),
+                clipBehavior: Clip.antiAlias, // Ensure the image is clipped to the border radius
+                child: Image.asset(
+                  chat.picture!,
+                  fit: BoxFit.cover,
+                ),
               ),
             ),
             const SizedBox(height: 40),
