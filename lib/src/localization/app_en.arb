@@ -7,6 +7,14 @@
   "@welcome": {
     "description": "The title of the home page"
   },
+  "welcomeMessage": "Welcome to our cozy and friendly space 🤗",
+  "@welcomeMessage": {
+    "description": "Welcoming text on the main app page"
+  },
+  "usageInstruction": "Use the menu below to connect with the desired community. Select the appropriate menu item from the list below. Follow the instructions. See you in our comfortable space.",
+  "@usageInstruction": {
+    "description": "Explanation for the users"
+  },
   "aboutUs": "About us",
   "@aboutUs": {
     "description": "The title of the about us page"

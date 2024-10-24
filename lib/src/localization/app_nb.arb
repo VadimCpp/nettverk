@@ -7,6 +7,14 @@
   "@welcome": {
     "description": "Tittelen på startsiden"
   },
+  "welcomeMessage": "Velkommen til vårt koselige og vennlige sted 🤗",
+  "@welcomeMessage": {
+    "description": "Velkomsttekst på hovedsiden til appen"
+  },
+  "usageInstruction": "Bruk menyen nedenfor for å koble deg til ønsket fellesskap. Velg riktig menyelement fra listen nedenfor. Følg instruksjonene. Vi sees i vårt komfortable rom.",
+  "@usageInstruction": {
+    "description": "Forklaring for brukerne"
+  },
   "aboutUs": "Om oss",
   "@aboutUs": {
     "description": "Tittelen på om oss-siden"

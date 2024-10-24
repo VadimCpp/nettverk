@@ -7,6 +7,14 @@
   "@welcome": {
     "description": "Tytuł strony głównej"
   },
+  "welcomeMessage": "Witamy w naszej przytulnej i przyjaznej przestrzeni 🤗",
+  "@welcomeMessage": {
+    "description": "Tekst powitalny na głównej stronie aplikacji"
+  },
+  "usageInstruction": "Użyj menu poniżej, aby połączyć się z wybraną społecznością. Wybierz odpowiednią opcję z listy poniżej. Postępuj zgodnie z instrukcjami. Do zobaczenia w naszej przytulnej przestrzeni.",
+  "@usageInstruction": {
+    "description": "Wyjaśnienie dla użytkowników"
+  },
   "aboutUs": "O nas",
   "@aboutUs": {
     "description": "Tytuł strony o nas"

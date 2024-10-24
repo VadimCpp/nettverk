@@ -26,27 +26,57 @@ class HomeScreen extends StatelessWidget {
               ),
             ],
           ),
-          body: ListView.builder(
-            itemCount: localizedItems.length,
-            restorationId: 'HomeScreen',
-            itemBuilder: (BuildContext context, int index) {
-              final item = localizedItems[index];
-
-              return ListTile(
-                title: Text(item.title),
-                leading: CircleAvatar(
-                  // Display the Flutter Logo image asset.
-                  foregroundImage: AssetImage(item.logo),
+          body: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
+                child: Center(
+                  child: Text(
+                    AppLocalizations.of(context)!.welcomeMessage,
+                    style: Theme.of(context).textTheme.headlineMedium,
+                    textAlign: TextAlign.center,
+                  ),
                 ),
-                onTap: () {
-                  if (item.id == 3) {
-                    context.push("/about");
-                  } else {
-                    context.push("/chat", extra: item);
-                  }
-                }
-              );
-            },
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 20.0),
+                child: Center(
+                  child: Text(
+                    AppLocalizations.of(context)!.usageInstruction,
+                    style: Theme.of(context).textTheme.bodyMedium,
+                    textAlign: TextAlign.left,
+                  ),
+                ),
+              ),
+              SizedBox(height: 20),
+              Expanded(
+                child: ListView.builder(
+                  itemCount: localizedItems.length,
+                  restorationId: 'HomeScreen',
+                  physics: const NeverScrollableScrollPhysics(), // Disable scrolling
+                  itemBuilder: (BuildContext context, int index) {
+                    final item = localizedItems[index];
+                    return ListTile(
+                      title: Text(
+                        item.title,
+                        style: Theme.of(context).textTheme.bodyLarge,
+                      ),
+                      leading: CircleAvatar(
+                      // Display the Flutter Logo image asset.
+                      foregroundImage: AssetImage(item.logo),
+                      ),
+                      onTap: () {
+                      if (item.id == 3) {
+                        context.push("/about");
+                      } else {
+                        context.push("/chat", extra: item);
+                      }
+                      }
+                    );
+                  },
+                )
+              )
+            ],
           ),
         );
       },
