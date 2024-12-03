@@ -174,7 +174,7 @@ packages:
     source: hosted
     version: "0.15.4"
   http:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: http
       sha256: b9c29a161230ee03d3ccf545097fccd9b87a5264228c5d348202e0f0c28f9010
@@ -490,6 +490,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.1.0"
+  webfeed_revised:
+    dependency: "direct main"
+    description:
+      name: webfeed_revised
+      sha256: b27650e3b9e2d6dd6693297e33eca23fe2dabca85e474efc975da7daf5f23cf4
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.8.0"
   win32:
     dependency: transitive
     description:

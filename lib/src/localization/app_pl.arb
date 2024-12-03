@@ -26,5 +26,21 @@
   "joinTelegramChat": "Używamy Telegramu do komunikacji z naszymi członkami. Dołącz do naszego czatu, aby być na bieżąco!",
   "@joinTelegramChat": {
     "description": "Zaproszenie do dołączenia do czatu społeczności na Telegramie"
+  },
+  "chats": "Czaty",
+  "@chats": {
+    "description": "Etykieta czatów"
+  },
+  "latestNews": "Najnowsze wiadomości",
+  "@latestNews": {
+    "description": "Etykieta najnowszych wiadomości"
+  },
+  "cannotLaunchUrl": "Nie można otworzyć URL",
+  "@cannotLaunchUrl": {
+    "description": "Komunikat o błędzie"
+  },
+  "feedLoadError": "Błąd ładowania kanału",
+  "@feedLoadError": {
+    "description": "Komunikat o błędzie"
   }
 }

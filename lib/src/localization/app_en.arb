@@ -26,5 +26,21 @@
   "joinTelegramChat": "We use Telegram to communicate with our members. Join our chat to stay updated!",
   "@joinTelegramChat": {
     "description": "An invitation to join community's chat in Telegram"
+  },
+  "chats": "Chats",
+  "@chats": {
+    "description": "Chats label"
+  },
+  "latestNews": "Latest News",
+  "@latestNews": {
+    "description": "Latest News label"
+  },
+  "cannotLaunchUrl": "Cannot Launch Url",
+  "@cannotLaunchUrl": {
+    "description": "Error message"
+  },
+  "feedLoadError": "Error load feed",
+  "@feedLoadError": {
+    "description": "Error message"
   }
 }

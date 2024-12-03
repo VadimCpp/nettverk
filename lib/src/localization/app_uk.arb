@@ -26,5 +26,21 @@
   "joinTelegramChat": "Ми використовуємо Telegram для спілкування з нашими учасниками. Приєднуйтесь до нашого чату, щоб бути в курсі подій!",
   "@joinTelegramChat": {
     "description": "Запрошення приєднатися до чату спільноти в Telegram"
+  },
+  "chats": "Чати",
+  "@chats": {
+    "description": "Мітка чатів"
+  },
+  "latestNews": "Останні новини",
+  "@latestNews": {
+    "description": "Мітка останніх новин"
+  },
+  "cannotLaunchUrl": "Не вдалося відкрити URL",
+  "@cannotLaunchUrl": {
+    "description": "Повідомлення про помилку"
+  },
+  "feedLoadError": "Помилка завантаження стрічки",
+  "@feedLoadError": {
+    "description": "Повідомлення про помилку"
   }
 }

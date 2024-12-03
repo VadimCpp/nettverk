@@ -26,5 +26,21 @@
   "joinTelegramChat": "Vi brukar Telegram for å kommunisere med medlemmane våre. Bli med i chatten vår for å halde deg oppdatert!",
   "@joinTelegramChat": {
     "description": "Ei invitasjon til å bli med i fellesskapets chat på Telegram"
+  },
+  "chats": "Samtalar",
+  "@chats": {
+    "description": "Etikett for samtalar"
+  },
+  "latestNews": "Siste nytt",
+  "@latestNews": {
+    "description": "Etikett for siste nytt"
+  },
+  "cannotLaunchUrl": "Kan ikkje opne URL",
+  "@cannotLaunchUrl": {
+    "description": "Feilmelding"
+  },
+  "feedLoadError": "Feil ved innlasting av straum",
+  "@feedLoadError": {
+    "description": "Feilmelding"
   }
 }
