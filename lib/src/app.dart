@@ -52,6 +52,7 @@ class NettverkApp extends StatelessWidget {
         Locale('ru', ''), // Russian, no country code
         Locale('pl', ''), // Polish, no country code
       ],
+      locale: settingsController.locale,
 
       // Hide the debug banner in debug mode
       debugShowCheckedModeBanner: false,
