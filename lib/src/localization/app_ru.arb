@@ -42,5 +42,13 @@
   "feedLoadError": "Ошибка загрузки ленты",
   "@feedLoadError": {
     "description": "Сообщение об ошибке"
+  },
+  "botassistant": "Бот-помощник",
+  "@botassistant": {
+    "description": "Метка бот-помощника"
+  },
+  "education": "Образование",
+  "@education": {
+    "description": "Метка образования"
   }
 }

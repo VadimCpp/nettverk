@@ -116,17 +116,31 @@ class _HomeScreenState extends State<HomeScreen> {
                     alignment: WrapAlignment.center,
                     children: [
                       ElevatedButton.icon(
-                        icon: Icon(Icons.info),
-                        label: Text(AppLocalizations.of(context)!.aboutUs),
-                        onPressed: () {
-                          context.push('/about');
-                        },
-                      ),
-                      ElevatedButton.icon(
                         icon: Icon(Icons.chat),
                         label: Text(AppLocalizations.of(context)!.chats),
                         onPressed: () {
                           context.push('/chats');
+                        },
+                      ),
+                      ElevatedButton.icon(
+                        icon: Icon(Icons.assistant),
+                        label: Text(AppLocalizations.of(context)!.botassistant),
+                        onPressed: () {
+                          context.push('/bot');
+                        },
+                      ),
+                      ElevatedButton.icon(
+                        icon: Icon(Icons.school),
+                        label: Text(AppLocalizations.of(context)!.education),
+                        onPressed: () {
+                          context.push('/edu');
+                        },
+                      ),
+                      ElevatedButton.icon(
+                        icon: Icon(Icons.info),
+                        label: Text(AppLocalizations.of(context)!.aboutUs),
+                        onPressed: () {
+                          context.push('/about');
                         },
                       ),
                       // Add more quick links as needed

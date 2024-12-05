@@ -42,5 +42,13 @@
   "feedLoadError": "Error load feed",
   "@feedLoadError": {
     "description": "Error message"
+  },
+  "botassistant": "Bot assistant",
+  "@botassistant": {
+    "description": "Bot assistant label"
+  },
+  "education": "Education",
+  "@education": {
+    "description": "Education label"
   }
 }

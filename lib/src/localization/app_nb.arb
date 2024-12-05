@@ -42,5 +42,13 @@
   "feedLoadError": "Feil ved lasting av feed",
   "@feedLoadError": {
     "description": "Feilmelding"
+  },
+  "botassistant": "Bot-assistent",
+  "@botassistant": {
+    "description": "Bot-assistent-etikett"
+  },
+  "education": "Utdanning",
+  "@education": {
+    "description": "Utdanningsetikett"
   }
 }

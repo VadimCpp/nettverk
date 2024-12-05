@@ -42,5 +42,13 @@
   "feedLoadError": "Feil ved innlasting av straum",
   "@feedLoadError": {
     "description": "Feilmelding"
+  },
+  "botassistant": "Bot-assistent",
+  "@botassistant": {
+    "description": "Bot-assistent-merkelapp"
+  },
+  "education": "Utdanning",
+  "@education": {
+    "description": "Utdanningsetikett"
   }
 }

@@ -42,5 +42,13 @@
   "feedLoadError": "Błąd ładowania kanału",
   "@feedLoadError": {
     "description": "Komunikat o błędzie"
+  },
+  "botassistant": "Bot-asystent",
+  "@botassistant": {
+    "description": "Etykieta bota-asystenta"
+  },
+  "education": "Edukacja",
+  "@education": {
+    "description": "Etykieta edukacji"
   }
 }

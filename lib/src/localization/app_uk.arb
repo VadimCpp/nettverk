@@ -42,5 +42,13 @@
   "feedLoadError": "Помилка завантаження стрічки",
   "@feedLoadError": {
     "description": "Повідомлення про помилку"
+  },
+  "botassistant": "Бот-помічник",
+  "@botassistant": {
+    "description": "Мітка бот-помічника"
+  },
+  "education": "Освіта",
+  "@education": {
+    "description": "Мітка освіти"
   }
 }
