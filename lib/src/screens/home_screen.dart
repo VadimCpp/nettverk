@@ -102,8 +102,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Center(
                     child: Text(
                       AppLocalizations.of(context)!.welcomeMessage,
-                      style: Theme.of(context).textTheme.headlineMedium,
-                      textAlign: TextAlign.center,
+                      style: Theme.of(context).textTheme.bodyMedium,
+                      textAlign: TextAlign.left,
                     ),
                   ),
                 ),

@@ -3,7 +3,7 @@
   "@appTitle": {
     "description": "Tittelen på applikasjonen"
   },
-  "welcomeMessage": "Velkomen til vår koselege og vennlege plass 🤗",
+  "welcomeMessage": "\"Nettverk\" er eit vennleg samfunn i Noreg. Vårt oppdrag er å hjelpe nye innbyggjarar med å integrere seg vellukka i det norske samfunnet og fremje gjensidig forståing mellom kulturar. Her kan du finne nyttig informasjon, dele erfaringar og få nye vener.",
   "@welcomeMessage": {
     "description": "Velkomsttekst på hovudsida til appen"
   },

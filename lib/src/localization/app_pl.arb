@@ -3,7 +3,7 @@
   "@appTitle": {
     "description": "Tytuł aplikacji"
   },
-  "welcomeMessage": "Witamy w naszej przytulnej i przyjaznej przestrzeni 🤗",
+  "welcomeMessage": "\"Nettverk\" jest przyjazną społecznością w Norwegii. Naszą misją jest pomaganie nowym mieszkańcom w pomyślnej integracji z norweskim społeczeństwem oraz promowanie wzajemnego zrozumienia między kulturami. Tu możesz znaleźć przydatne informacje, dzielić się doświadczeniami i zawierać nowe przyjaźnie.",
   "@welcomeMessage": {
     "description": "Tekst powitalny na głównej stronie aplikacji"
   },
