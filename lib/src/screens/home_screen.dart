@@ -5,6 +5,7 @@ import 'package:http/http.dart' as http;
 import 'package:intl/intl.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:webfeed_revised/webfeed_revised.dart';
+import 'package:nettverk/src/widgets/index.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -91,6 +92,15 @@ class HomeScreenState extends State<HomeScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
+            SizedBox(height: 10),
+            OverlappingImages(
+              imagePaths: [
+                'assets/images/bergen_logo.png',
+                'assets/images/borinorge_logo.png',
+                'assets/images/oslo_logo.png',
+              ],
+            ),
+            SizedBox(height: 10),
             // Welcome Message
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
