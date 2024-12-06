@@ -243,11 +243,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           foregroundImage: AssetImage(item.logo),
                         ),
                         onTap: () {
-                          if (item.id == 3) {
-                            context.push("/about");
-                          } else {
-                            context.push("/chat", extra: item);
-                          }
+                          context.push("/chat", extra: item);
                         },
                       );
                     },
