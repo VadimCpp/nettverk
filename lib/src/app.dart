@@ -91,6 +91,10 @@ class NettverkApp extends StatelessWidget {
             },
           ),
           GoRoute(
+            path: "/chats",
+            builder: (context, state) => const ChatsScreen(),
+          ),
+          GoRoute(
             path: "/about",
             builder: (context, state) => const AboutUsScreen(),
           )
