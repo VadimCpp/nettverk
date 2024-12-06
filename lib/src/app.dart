@@ -6,7 +6,6 @@ import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:go_router/go_router.dart';
 import 'package:nettverk/src/controllers/index.dart';
 import 'package:nettverk/src/screens/index.dart';
-import 'package:nettverk/src/models/index.dart';
 
 class NettverkApp extends StatelessWidget {
   const NettverkApp({super.key});
@@ -81,14 +80,6 @@ class NettverkApp extends StatelessWidget {
           GoRoute(
             path: "/settings",
             builder: (context, state) => const SettingsScreen(),
-          ),
-          GoRoute(
-            path: "/chat",
-            name: 'chat',
-            builder: (BuildContext context, GoRouterState state) {
-              final Chat item = state.extra as Chat;
-              return ChatScreen(chat: item);
-            },
           ),
           GoRoute(
             path: "/chats",
