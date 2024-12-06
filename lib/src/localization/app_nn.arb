@@ -7,6 +7,10 @@
   "@welcomeMessage": {
     "description": "Velkomsttekst på hovudsida til appen"
   },
+  "chooseSection": "Vel delen du likar, og start å byggje ditt nye liv i eit nytt land.",
+  "@chooseSection": {
+    "description": "Instruksjonstekst på hovudsida av appen"
+  },
   "usageInstruction": "Bruk menyen nedanfor for å knyte deg til ønskt fellesskap. Vel rett menypunkt frå lista nedanfor. Følg instruksjonane. Vi sjåast i vår komfortable sone.",
   "@usageInstruction": {
     "description": "Forklaring for brukarane"

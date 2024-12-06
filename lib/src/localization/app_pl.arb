@@ -7,6 +7,10 @@
   "@welcomeMessage": {
     "description": "Tekst powitalny na głównej stronie aplikacji"
   },
+  "chooseSection": "Wybierz sekcję, którą lubisz, i zacznij budować nowe życie w nowym kraju.",
+  "@chooseSection": {
+    "description": "Tekst instrukcji na głównej stronie aplikacji"
+  },
   "usageInstruction": "Użyj menu poniżej, aby połączyć się z wybraną społecznością. Wybierz odpowiednią opcję z listy poniżej. Postępuj zgodnie z instrukcjami. Do zobaczenia w naszej przytulnej przestrzeni.",
   "@usageInstruction": {
     "description": "Wyjaśnienie dla użytkowników"

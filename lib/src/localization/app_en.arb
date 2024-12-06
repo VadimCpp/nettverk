@@ -7,6 +7,10 @@
   "@welcomeMessage": {
     "description": "Welcoming text on the main app page"
   },
+  "chooseSection": "Choose the section you like and start building your new life in a new country.",
+  "@chooseSection": {
+    "description": "Instruction text on the main app page"
+  },
   "usageInstruction": "Use the menu below to connect with the desired community. Select the appropriate menu item from the list below. Follow the instructions. See you in our comfortable space.",
   "@usageInstruction": {
     "description": "Explanation for the users"

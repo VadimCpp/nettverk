@@ -107,6 +107,17 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                 ),
+                // Instruction text
+                Padding(
+                  padding: const EdgeInsets.only(left: 20.0, right: 20.0, bottom: 20.0),
+                  child: Center(
+                    child: Text(
+                      AppLocalizations.of(context)!.chooseSection,
+                      style: Theme.of(context).textTheme.bodyMedium,
+                      textAlign: TextAlign.left,
+                    ),
+                  ),
+                ),
                 // Quick Links
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20.0),
