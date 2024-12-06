@@ -111,8 +111,15 @@ class ChatsScreenState extends State<ChatsScreen> {
                             Container(
                               // Add a semi-transparent background for better text visibility
                               width: double.infinity,
-                              color: Colors.black.withOpacity(0.5),
+                              
                               padding: const EdgeInsets.symmetric(vertical: 10),
+                                decoration: BoxDecoration(
+                                borderRadius: const BorderRadius.only(
+                                  bottomLeft: Radius.circular(8),
+                                  bottomRight: Radius.circular(8),
+                                ), // Adjust the border radius as needed
+                                color: Colors.black.withOpacity(0.5),
+                                ),
                               child: Text(
                                 'Telegram chat - ${chat.title}',
                                 textAlign: TextAlign.center,
@@ -122,6 +129,7 @@ class ChatsScreenState extends State<ChatsScreen> {
                                   fontSize: 16,
                                 ),
                               ),
+                              
                             ),
                           ],
                         ),
