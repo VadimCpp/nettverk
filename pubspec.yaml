@@ -21,6 +21,7 @@ dependencies:
   package_info_plus: ^8.1.0
   webfeed_revised: ^0.8.0
   http: ^1.2.2
+  intl: ^0.19.0
 
 dev_dependencies:
   flutter_test:
