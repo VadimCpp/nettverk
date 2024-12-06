@@ -44,7 +44,7 @@ class ChatsScreenState extends State<ChatsScreen> {
         context: context,
         builder: (BuildContext context) {
           return AlertDialog(
-            title: const Text("Error"),
+            title: Text(AppLocalizations.of(context)!.error),
             content: Text(errorMessage),
             actions: [
               TextButton(
@@ -109,15 +109,14 @@ class ChatsScreenState extends State<ChatsScreen> {
                               ),
                             ),
                             Container(
-                              // Add a semi-transparent background for better text visibility
                               width: double.infinity,
-                              
+                              // Add a semi-transparent background for better text visibility and the border radius at the bottom
                               padding: const EdgeInsets.symmetric(vertical: 10),
                                 decoration: BoxDecoration(
                                 borderRadius: const BorderRadius.only(
                                   bottomLeft: Radius.circular(8),
                                   bottomRight: Radius.circular(8),
-                                ), // Adjust the border radius as needed
+                                ), 
                                 color: Colors.black.withOpacity(0.5),
                                 ),
                               child: Text(
@@ -128,8 +127,7 @@ class ChatsScreenState extends State<ChatsScreen> {
                                   fontWeight: FontWeight.bold,
                                   fontSize: 16,
                                 ),
-                              ),
-                              
+                              ), 
                             ),
                           ],
                         ),

@@ -54,5 +54,9 @@
   "education": "Образование",
   "@education": {
     "description": "Метка образования"
+  },
+  "error": "Ошибка",
+  "@error": {
+    "description": "Заголовок сообщения об ошибке"
   }
 }

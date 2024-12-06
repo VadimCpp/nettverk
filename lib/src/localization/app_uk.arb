@@ -54,5 +54,9 @@
   "education": "Освіта",
   "@education": {
     "description": "Мітка освіти"
+  },
+  "error": "Помилка",
+  "@error": {
+    "description": "Заголовок повідомлення про помилку"
   }
 }

@@ -54,5 +54,9 @@
   "education": "Education",
   "@education": {
     "description": "Education label"
+  },
+  "error": "Error",
+  "@error": {
+    "description": "Error message title"
   }
 }
