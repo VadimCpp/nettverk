@@ -69,7 +69,7 @@ class ChatsScreenState extends State<ChatsScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            const SizedBox(height: 40),
+            const SizedBox(height: 20),
             Padding(
               padding: const EdgeInsets.only(left: 20, right: 20),
               child: Text(
@@ -89,26 +89,43 @@ class ChatsScreenState extends State<ChatsScreen> {
                     const SizedBox(height: 20),
                     Padding(
                       padding: const EdgeInsets.only(left: 20, right: 20),
-                      child: Container(
-                        width: double.infinity,
-                        height: 230,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(8), // Adjust the border radius as needed
-                        ),
-                        clipBehavior: Clip.antiAlias, // Ensure the image is clipped to the border radius
-                        child: Image.asset(
-                          chat.picture!,
-                          fit: BoxFit.cover,
+                      child: GestureDetector(
+                        onTap: () {
+                          _openTelegram(context, chat.chatName!);
+                        },
+                        child: Stack(
+                          alignment: Alignment.bottomCenter, // Align text at the bottom center of the image
+                          children: [
+                            Container(
+                              width: double.infinity,
+                              height: 230,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(8), // Adjust the border radius as needed
+                              ),
+                              clipBehavior: Clip.antiAlias, // Ensure the image is clipped to the border radius
+                              child: Image.asset(
+                                chat.picture!,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                            Container(
+                              // Add a semi-transparent background for better text visibility
+                              width: double.infinity,
+                              color: Colors.black.withOpacity(0.5),
+                              padding: const EdgeInsets.symmetric(vertical: 10),
+                              child: Text(
+                                'Telegram chat - ${chat.title}',
+                                textAlign: TextAlign.center,
+                                style: const TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16,
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
                       ),
-                    ),
-
-                    const SizedBox(height: 10),
-                    ElevatedButton(
-                      onPressed: () {
-                        _openTelegram(context, chat.chatName!);
-                      },
-                      child: Text('Telegram chat - ${chat.title}'),
                     ),
                     const SizedBox(height: 10),
                   ],
