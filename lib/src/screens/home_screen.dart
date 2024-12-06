@@ -186,19 +186,7 @@ class HomeScreenState extends State<HomeScreen> {
                                 .format(item.pubDate!)
                               : '',
                           ),
-                          // Text(item.pubDate?.toLocal().toString() ?? ''),
-                          onTap: () async {
-                            if (item.link != null) {
-                              final url = Uri.parse(item.link!);
-                              if (await canLaunchUrl(url)) {
-                                await launchUrl(url);
-                              } else {
-                                ScaffoldMessenger.of(context).showSnackBar(
-                                  SnackBar(content: Text(AppLocalizations.of(context)!.cannotLaunchUrl)),
-                                );
-                              }
-                            }
-                          },
+                          onTap: () => _onTap(item)
                         );
                       },
                     );
@@ -223,5 +211,21 @@ class HomeScreenState extends State<HomeScreen> {
         ),
       ),
     );
+  }
+
+  Future<void> _onTap(item) async {
+    if (item.link != null) {
+      final url = Uri.parse(item.link!);
+
+      if (await canLaunchUrl(url)) {
+        await launchUrl(url);
+      } else {
+        if (mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text(AppLocalizations.of(context)!.cannotLaunchUrl)),
+          );
+        }
+      }
+    }
   }
 }
