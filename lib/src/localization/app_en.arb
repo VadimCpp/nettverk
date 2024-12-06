@@ -58,5 +58,9 @@
   "error": "Error",
   "@error": {
     "description": "Error message title"
+  },
+  "openTelergamAppErrorMessage": "Unable to open the Telegram app. Please ensure that the app is installed on your device.",
+  "@openTelergamAppErrorMessage": {
+    "description": "Error message"
   }
 }

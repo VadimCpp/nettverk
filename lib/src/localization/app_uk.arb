@@ -58,5 +58,9 @@
   "error": "Помилка",
   "@error": {
     "description": "Заголовок повідомлення про помилку"
+  },
+  "openTelergamAppErrorMessage": "Не вдалося відкрити додаток Telegram. Переконайтеся, що додаток встановлений на вашому пристрої.",
+  "@openTelergamAppErrorMessage": {
+    "description": "Повідомлення про помилку"
   }
 }

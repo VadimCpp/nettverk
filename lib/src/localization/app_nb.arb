@@ -58,5 +58,9 @@
   "error": "Feil",
   "@error": {
     "description": "Tittel på feilmelding"
+  },
+  "openTelergamAppErrorMessage": "Kan ikke åpne Telegram-appen. Sørg for at appen er installert på enheten din.",
+  "@openTelergamAppErrorMessage": {
+    "description": "Feilmelding"
   }
 }

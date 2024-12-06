@@ -27,14 +27,12 @@ class ChatsScreenState extends State<ChatsScreen> {
     final Uri telegramAppUrl = Uri.parse('tg://resolve?domain=$chatName'); // For Telegram app is required
 
     bool isLaunched = false;
-    String errorMessage = 'Error launching Telegram chat';
     try {
       if (await launchUrl(telegramAppUrl)) {
         isLaunched = true;
       }
     }
     catch (e) {
-      errorMessage = 'Error launching Telegram app: $e';
       isLaunched = false;
     }
 
@@ -45,10 +43,10 @@ class ChatsScreenState extends State<ChatsScreen> {
         builder: (BuildContext context) {
           return AlertDialog(
             title: Text(AppLocalizations.of(context)!.error),
-            content: Text(errorMessage),
+            content: Text(AppLocalizations.of(context)!.openTelergamAppErrorMessage),
             actions: [
               TextButton(
-                child: const Text("Cancel"),
+                child: const Text("OK"),
                 onPressed: () {
                   context.pop();
                 },
