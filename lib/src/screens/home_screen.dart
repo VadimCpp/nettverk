@@ -105,7 +105,7 @@ class HomeScreenState extends State<HomeScreen> {
               ),
             ),
             SizedBox(height: 20),
-            LatestNews()
+            if (Localizations.localeOf(context).languageCode == 'uk') LatestNews(),
           ],
         ),
       ),
