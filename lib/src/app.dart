@@ -45,7 +45,10 @@ class NettverkApp extends StatelessWidget {
       ],
       supportedLocales: const [
         Locale('nb', ''), // Norsk Bokmål, no country code
-        Locale('nn', ''), // Norsk Nynorsk, no country code
+        // TODO: Add support for Nynorsk
+        // • A MaterialLocalizations delegate that supports the nn locale was not found.
+        // • A CupertinoLocalizations delegate that supports the nn locale was not found.
+        // Locale('nn', ''), // Norsk Nynorsk, no country code (not supported) 
         Locale('uk', ''), // Ukrainian, no country code
         Locale('en', ''), // English, no country code
         Locale('ru', ''), // Russian, no country code

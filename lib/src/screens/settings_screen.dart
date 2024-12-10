@@ -58,10 +58,11 @@ class SettingsScreen extends StatelessWidget {
                       value: Locale('nb', ''),
                       child: Text('Norsk Bokmål'),
                     ),
-                    DropdownMenuItem(
-                      value: Locale('nn', ''),
-                      child: Text('Norsk Nynorsk'),
-                    ),
+                    // TODO: Add support for Nynorsk
+                    // DropdownMenuItem(
+                    //   value: Locale('nn', ''),
+                    //   child: Text('Norsk Nynorsk'),
+                    // ),
                     DropdownMenuItem(
                       value: Locale('uk', ''),
                       child: Text('Ukrainian'),
