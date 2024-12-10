@@ -62,5 +62,9 @@
   "openTelergamAppErrorMessage": "Не вдалося відкрити додаток Telegram. Переконайтеся, що додаток встановлений на вашому пристрої.",
   "@openTelergamAppErrorMessage": {
     "description": "Повідомлення про помилку"
+  },
+  "telegramChat": "Чат Telegram",
+  "@telegramChat": {
+    "description": "Частина мітки посилання на чат"
   }
 }

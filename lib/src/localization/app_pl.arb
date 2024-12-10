@@ -62,5 +62,9 @@
   "openTelergamAppErrorMessage": "Nie można otworzyć aplikacji Telegram. Upewnij się, że aplikacja jest zainstalowana na Twoim urządzeniu.",
   "@openTelergamAppErrorMessage": {
     "description": "Komunikat o błędzie"
+  },
+  "telegramChat": "Czat Telegram",
+  "@telegramChat": {
+    "description": "Fragment etykiety linku do czatu"
   }
 }

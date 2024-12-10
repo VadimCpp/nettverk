@@ -118,7 +118,7 @@ class ChatsScreenState extends State<ChatsScreen> {
                                 color: Colors.black.withOpacity(0.5),
                                 ),
                               child: Text(
-                                'Telegram chat - ${chat.title}',
+                                '${AppLocalizations.of(context)!.telegramChat} - ${chat.title}',
                                 textAlign: TextAlign.center,
                                 style: const TextStyle(
                                   color: Colors.white,

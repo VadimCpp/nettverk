@@ -62,5 +62,9 @@
   "openTelergamAppErrorMessage": "Unable to open the Telegram app. Please ensure that the app is installed on your device.",
   "@openTelergamAppErrorMessage": {
     "description": "Error message"
+  },
+  "telegramChat": "Telegram chat",
+  "@telegramChat": {
+    "description": "Piece of chat link label"
   }
 }

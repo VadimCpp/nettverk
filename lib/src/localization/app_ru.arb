@@ -62,5 +62,9 @@
   "openTelergamAppErrorMessage": "Не удалось открыть приложение Telegram. Убедитесь, что приложение установлено на вашем устройстве.",
   "@openTelergamAppErrorMessage": {
     "description": "Сообщение об ошибке"
+  },
+  "telegramChat": "Чат Telegram",
+  "@telegramChat": {
+    "description": "Часть метки ссылки на чат"
   }
 }

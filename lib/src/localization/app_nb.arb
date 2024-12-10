@@ -62,5 +62,9 @@
   "openTelergamAppErrorMessage": "Kan ikke åpne Telegram-appen. Sørg for at appen er installert på enheten din.",
   "@openTelergamAppErrorMessage": {
     "description": "Feilmelding"
+  },
+  "telegramChat": "Telegram-chat",
+  "@telegramChat": {
+    "description": "Del av chattens lenkeetikett"
   }
 }
