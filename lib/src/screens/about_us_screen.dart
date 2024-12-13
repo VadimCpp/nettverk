@@ -16,8 +16,6 @@ class AboutUsScreen extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           const SizedBox(height: 20),
-          VersionInfo(),
-          const SizedBox(height: 20),
           Padding(
             padding: const EdgeInsets.only(left: 20, right: 20),
             child: Text(
@@ -26,7 +24,9 @@ class AboutUsScreen extends StatelessWidget {
               style: Theme.of(context).textTheme.bodyMedium,
             ),
           ),
-          const SizedBox(height: 40),
+          const SizedBox(height: 20),
+          VersionInfo(),
+          const SizedBox(height: 20),
           ElevatedButton(
             onPressed: () {
               context.pop();
