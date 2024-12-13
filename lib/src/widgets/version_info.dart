@@ -1,5 +1,6 @@
-import 'package:package_info_plus/package_info_plus.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 
 class VersionInfo extends StatelessWidget {
   const VersionInfo({super.key});
@@ -16,9 +17,9 @@ class VersionInfo extends StatelessWidget {
         } else if (snapshot.hasData) {
           final version = snapshot.data!.version;
           final buildNumber = snapshot.data!.buildNumber;
-          return Text("Version: $version ($buildNumber)");
+          return Text("${AppLocalizations.of(context)!.version}: $version ($buildNumber)");
         }
-        return Text("Version info not available");
+        return Text(AppLocalizations.of(context)!.versionIsNotAvailable);
       },
     );
   }

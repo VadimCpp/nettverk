@@ -62,5 +62,13 @@
   "telegramChat": "Telegram chat",
   "@telegramChat": {
     "description": "Piece of chat link label"
+  },
+  "version": "Version",
+  "@version": {
+    "description": "A text"
+  },
+  "versionIsNotAvailable": "The version is not available.",
+  "@version": {
+    "description": "An error text"
   }
 }

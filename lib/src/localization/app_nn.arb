@@ -62,5 +62,13 @@
   "telegramChat": "Telegram-chat",
   "@telegramChat": {
     "description": "Del av lenkeetiketten til chaten"
+  },
+  "version": "Versjon",
+  "@version": {
+    "description": "Ein tekst"
+  },
+  "versionIsNotAvailable": "Versjonen er ikkje tilgjengeleg.",
+  "@version": {
+    "description": "Ein feilmeldingstekst"
   }
 }

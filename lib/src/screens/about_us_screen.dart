@@ -4,9 +4,9 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:nettverk/src/components/index.dart';
 import 'package:nettverk/src/controllers/index.dart';
 import 'package:nettverk/src/models/index.dart';
+import 'package:nettverk/src/widgets/index.dart';
 
 class AboutUsScreen extends StatefulWidget {
   const AboutUsScreen({super.key});

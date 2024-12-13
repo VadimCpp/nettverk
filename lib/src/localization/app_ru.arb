@@ -62,5 +62,13 @@
   "telegramChat": "Чат Telegram",
   "@telegramChat": {
     "description": "Часть метки ссылки на чат"
+  },
+  "version": "Версия",
+  "@version": {
+    "description": "Текст"
+  },
+  "versionIsNotAvailable": "Версия недоступна.",
+  "@version": {
+    "description": "Текст ошибки"
   }
 }

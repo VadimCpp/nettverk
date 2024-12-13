@@ -62,5 +62,13 @@
   "telegramChat": "Czat Telegram",
   "@telegramChat": {
     "description": "Fragment etykiety linku do czatu"
+  },
+  "version": "Wersja",
+  "@version": {
+    "description": "Tekst"
+  },
+  "versionIsNotAvailable": "Wersja nie jest dostępna.",
+  "@version": {
+    "description": "Tekst błędu"
   }
 }
