@@ -23,10 +23,6 @@
   "@aboutNettverk": {
     "description": "An explanation about the project"
   },
-  "back": "Back",
-  "@back": {
-    "description": "Button label"
-  },
   "joinTelegramChat": "We use Telegram to communicate with our members. Join our chat to stay updated!",
   "@joinTelegramChat": {
     "description": "An invitation to join community's chat in Telegram"

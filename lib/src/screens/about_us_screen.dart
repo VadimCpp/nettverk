@@ -32,7 +32,7 @@ class AboutUsScreenState extends State<AboutUsScreen> {
         title: Text(AppLocalizations.of(context)!.aboutUs),
       ),
       body: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Center(
             child: CarouselSlider(
@@ -104,13 +104,9 @@ class AboutUsScreenState extends State<AboutUsScreen> {
             ),
           ),
           const SizedBox(height: 20),
-          VersionInfo(),
-          const SizedBox(height: 20),
-          ElevatedButton(
-            onPressed: () {
-              context.pop();
-            },
-            child: Text(AppLocalizations.of(context)!.back),
+          Padding(
+            padding: const EdgeInsets.only(left: 20, right: 20),
+            child: VersionInfo(),
           ),
         ],
       )

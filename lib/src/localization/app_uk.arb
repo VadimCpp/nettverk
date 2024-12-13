@@ -23,10 +23,6 @@
   "@aboutNettverk": {
     "description": "Пояснення про проєкт"
   },
-  "back": "Назад",
-  "@back": {
-    "description": "Мітка кнопки"
-  },
   "joinTelegramChat": "Ми використовуємо Telegram для спілкування з нашими учасниками. Приєднуйтесь до нашого чату, щоб бути в курсі подій!",
   "@joinTelegramChat": {
     "description": "Запрошення приєднатися до чату спільноти в Telegram"
