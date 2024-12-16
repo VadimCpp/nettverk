@@ -98,5 +98,9 @@
   "systemLanguage": "Systemspråk",
   "@systemLanguage": {
     "description": "Systemspråkstekst"
+  },
+  "educationPromo": "I vårt fellesskap vil du få tilgang til spennande arrangement som vil hjelpe deg å vekse og tilpasse deg eit nytt liv. Våre inspirerande foredragshaldarar deler verdifull kunnskap innan område som gir deg dei beste moglegheitene for suksess – både personleg og profesjonelt. Ikkje gå glipp av noko viktig – hald deg oppdatert med nyheiter og oppdateringar direkte i våre chatter!",
+  "@educationPromo": {
+    "description": "Promotekst"
   }
 }

@@ -90,7 +90,7 @@ class HomeScreenState extends State<HomeScreen> {
                     icon: Icon(Icons.school),
                     label: Text(AppLocalizations.of(context)!.education),
                     onPressed: () {
-                      context.push('/edu');
+                      context.push('/education');
                     },
                   ),
                   ElevatedButton.icon(
