@@ -44,6 +44,10 @@ class NettverkAppState extends State<NettverkApp> {
           GoRoute(
             path: "/education",
             builder: (context, state) => const EducationScreen(),
+          ),
+          GoRoute(
+            path: "/bot",
+            builder: (context, state) => const BotScreen(),
           )
         ],
       // Optional: Add a listener if routing logic depends on external factors

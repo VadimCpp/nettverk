@@ -102,5 +102,9 @@
   "educationPromo": "W naszej społeczności uzyskasz dostęp do ekscytujących wydarzeń, które pomogą ci rozwijać się i dostosować do nowego życia. Nasi inspirujący prelegenci dzielą się cenną wiedzą w obszarach, które zapewnią ci najlepsze możliwości sukcesu – zarówno osobistego, jak i zawodowego. Nie przegap niczego ważnego – bądź na bieżąco z wiadomościami i aktualizacjami bezpośrednio w naszych czatach!",
   "@educationPromo": {
     "description": "Tekst promocyjny"
+  },
+  "botPromo": "Poznaj swojego nowego towarzysza AI na Telegramie—asystenta stworzonego, aby wspierać naszą społeczność! Usprawnij rozmowy, wykonuj zadania i uzyskuj natychmiastowe informacje dzięki najnowocześniejszej technologii zaprojektowanej dla bezproblemowej komunikacji. Dołącz do nas już dziś i odkryj mądrzejszą, bardziej połączoną przyszłość.",
+  "@botPromo": {
+    "description": "Tekst promocyjny dla asystenta AI"
   }
 }

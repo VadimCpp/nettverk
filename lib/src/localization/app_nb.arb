@@ -102,5 +102,9 @@
   "educationPromo": "I vårt fellesskap vil du få tilgang til spennende arrangementer som vil hjelpe deg å vokse og tilpasse deg et nytt liv. Våre inspirerende foredragsholdere deler verdifull kunnskap innen områder som gir deg de beste mulighetene for suksess – både personlig og profesjonelt. Gå ikke glipp av noe viktig – hold deg oppdatert med nyheter og oppdateringer direkte i våre chatter!",
   "@educationPromo": {
     "description": "Promotekst"
+  },
+  "botPromo": "Møt din nye AI-kompanjong på Telegram—en assistent bygget for å styrke vårt fellesskap! Forenkle samtalene dine, ta tak i oppgaver, og få øyeblikkelig innsikt med toppmoderne teknologi designet for enkel kommunikasjon. Bli med oss i dag og omfavn en smartere, mer tilkoblet fremtid sammen.",
+  "@botPromo": {
+    "description": "Promotekst for AI-botassistent"
   }
 }
