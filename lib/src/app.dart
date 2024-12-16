@@ -7,8 +7,50 @@ import 'package:go_router/go_router.dart';
 import 'package:nettverk/src/controllers/index.dart';
 import 'package:nettverk/src/screens/index.dart';
 
-class NettverkApp extends StatelessWidget {
+class NettverkApp extends StatefulWidget {
   const NettverkApp({super.key});
+
+  @override
+  NettverkAppState createState() => NettverkAppState();
+}
+
+class NettverkAppState extends State<NettverkApp> {
+  late final GoRouter _router;
+
+  @override
+  void initState() {
+    super.initState();
+
+    // Initialize GoRouter once
+    _router = GoRouter(
+      initialLocation: '/',
+      routes: [
+          GoRoute(
+            path: "/",
+            builder: (context, state) => const HomeScreen(),
+          ),
+          GoRoute(
+            path: "/settings",
+            builder: (context, state) => const SettingsScreen(),
+          ),
+          GoRoute(
+            path: "/chats",
+            builder: (context, state) => const ChatsScreen(),
+          ),
+          GoRoute(
+            path: "/about",
+            builder: (context, state) => const AboutUsScreen(),
+          )
+        ],
+      // Optional: Add a listener if routing logic depends on external factors
+      // refreshListenable: Provider.of<SettingsController>(context, listen: false),
+    );
+
+    // Schedule the splash screen to be hidden after the first frame
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      onComponentFullyLoaded();
+    });
+  }
 
   void onComponentFullyLoaded() {
     debugPrint("App is fully loaded!");
@@ -56,9 +98,6 @@ class NettverkApp extends StatelessWidget {
       ],
       locale: settingsController.locale,
 
-      // Hide the debug banner in debug mode
-      debugShowCheckedModeBanner: false,
-
       // Use AppLocalizations to configure the correct application title
       // depending on the user's locale.
       //
@@ -74,26 +113,7 @@ class NettverkApp extends StatelessWidget {
       darkTheme: ThemeData.dark(),
       themeMode: settingsController.themeMode,
 
-      routerConfig: GoRouter(
-        routes: [
-          GoRoute(
-            path: "/",
-            builder: (context, state) => const HomeScreen(),
-          ),
-          GoRoute(
-            path: "/settings",
-            builder: (context, state) => const SettingsScreen(),
-          ),
-          GoRoute(
-            path: "/chats",
-            builder: (context, state) => const ChatsScreen(),
-          ),
-          GoRoute(
-            path: "/about",
-            builder: (context, state) => const AboutUsScreen(),
-          )
-        ],
-      ),
+      routerConfig: _router,
     );
   }
 }
