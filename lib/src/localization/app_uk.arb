@@ -70,5 +70,33 @@
   "versionIsNotAvailable": "Версія недоступна.",
   "@version": {
     "description": "Текст помилки"
+  },
+  "settings": "Налаштування",
+  "@settings": {
+    "description": "Заголовок екрану"
+  },
+  "chooseYourPreferredTheme": "Виберіть бажану тему:",
+  "@chooseYourPreferredTheme": {
+    "description": "Позначка вибору теми"
+  },
+  "systemTheme": "Системна тема",
+  "@systemTheme": {
+    "description": "Позначка системної теми"
+  },
+  "lightTheme": "Світла тема",
+  "@lightTheme": {
+    "description": "Позначка світлої теми"
+  },
+  "darkTheme": "Темна тема",
+  "@darkTheme": {
+    "description": "Позначка темної теми"
+  },
+  "chooseYourPreferredLanguage": "Виберіть бажану мову:",
+  "@chooseYourPreferredLanguage": {
+    "description": "Позначка вибору мови"
+  },
+  "systemLanguage": "Системна мова",
+  "@systemLanguage": {
+    "description": "Позначка системної мови"
   }
 }

@@ -70,5 +70,33 @@
   "versionIsNotAvailable": "The version is not available.",
   "@version": {
     "description": "An error text"
+  },
+  "settings": "Settings",
+  "@settings": {
+    "description": "Screen title"
+  },
+  "chooseYourPreferredTheme": "Choose your preferred theme:",
+  "@chooseYourPreferredTheme": {
+    "description": "Choose theme label"
+  },
+  "systemTheme": "System Theme",
+  "@systemTheme": {
+    "description": "System theme label"
+  },
+  "lightTheme": "Light Theme",
+  "@lightTheme": {
+    "description": "Light theme label"
+  },
+  "darkTheme": "Dark Theme",
+  "@darkTheme": {
+    "description": "Dark theme label"
+  },
+  "chooseYourPreferredLanguage": "Choose your preferred language:",
+  "@chooseYourPreferredLanguage": {
+    "description": "Choose locale label"
+  },
+  "systemLanguage": "System Language",
+  "@systemLanguage": {
+    "description": "System language label"
   }
 }

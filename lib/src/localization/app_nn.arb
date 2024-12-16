@@ -70,5 +70,33 @@
   "versionIsNotAvailable": "Versjonen er ikkje tilgjengeleg.",
   "@version": {
     "description": "Ein feilmeldingstekst"
+  },
+  "settings": "Innstillingar",
+  "@settings": {
+    "description": "Tittelen på skjermen"
+  },
+  "chooseYourPreferredTheme": "Vel ditt føretrekte tema:",
+  "@chooseYourPreferredTheme": {
+    "description": "Vel tematekst"
+  },
+  "systemTheme": "Systemtema",
+  "@systemTheme": {
+    "description": "Systemtematekst"
+  },
+  "lightTheme": "Lyst tema",
+  "@lightTheme": {
+    "description": "Lyst tematekst"
+  },
+  "darkTheme": "Mørkt tema",
+  "@darkTheme": {
+    "description": "Mørkt tematekst"
+  },
+  "chooseYourPreferredLanguage": "Vel ditt føretrekte språk:",
+  "@chooseYourPreferredLanguage": {
+    "description": "Vel språktekst"
+  },
+  "systemLanguage": "Systemspråk",
+  "@systemLanguage": {
+    "description": "Systemspråkstekst"
   }
 }

@@ -70,5 +70,33 @@
   "versionIsNotAvailable": "Версия недоступна.",
   "@version": {
     "description": "Текст ошибки"
+  },
+  "settings": "Настройки",
+  "@settings": {
+    "description": "Заголовок экрана"
+  },
+  "chooseYourPreferredTheme": "Выберите предпочитаемую тему:",
+  "@chooseYourPreferredTheme": {
+    "description": "Метка выбора темы"
+  },
+  "systemTheme": "Системная тема",
+  "@systemTheme": {
+    "description": "Метка системной темы"
+  },
+  "lightTheme": "Светлая тема",
+  "@lightTheme": {
+    "description": "Метка светлой темы"
+  },
+  "darkTheme": "Темная тема",
+  "@darkTheme": {
+    "description": "Метка темной темы"
+  },
+  "chooseYourPreferredLanguage": "Выберите предпочитаемый язык:",
+  "@chooseYourPreferredLanguage": {
+    "description": "Метка выбора языка"
+  },
+  "systemLanguage": "Системный язык",
+  "@systemLanguage": {
+    "description": "Метка системного языка"
   }
 }

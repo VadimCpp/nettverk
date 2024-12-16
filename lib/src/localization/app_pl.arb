@@ -70,5 +70,33 @@
   "versionIsNotAvailable": "Wersja nie jest dostępna.",
   "@version": {
     "description": "Tekst błędu"
+  },
+  "settings": "Ustawienia",
+  "@settings": {
+    "description": "Tytuł ekranu"
+  },
+  "chooseYourPreferredTheme": "Wybierz preferowany motyw:",
+  "@chooseYourPreferredTheme": {
+    "description": "Etykieta wyboru motywu"
+  },
+  "systemTheme": "Motyw systemowy",
+  "@systemTheme": {
+    "description": "Etykieta motywu systemowego"
+  },
+  "lightTheme": "Jasny motyw",
+  "@lightTheme": {
+    "description": "Etykieta jasnego motywu"
+  },
+  "darkTheme": "Ciemny motyw",
+  "@darkTheme": {
+    "description": "Etykieta ciemnego motywu"
+  },
+  "chooseYourPreferredLanguage": "Wybierz preferowany język:",
+  "@chooseYourPreferredLanguage": {
+    "description": "Etykieta wyboru języka"
+  },
+  "systemLanguage": "Język systemowy",
+  "@systemLanguage": {
+    "description": "Etykieta języka systemowego"
   }
 }
