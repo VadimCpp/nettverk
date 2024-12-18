@@ -106,6 +106,9 @@ class NettverkAppState extends State<NettverkApp> {
       ],
       locale: settingsController.locale,
 
+      // Hide the debug banner in debug mode
+      debugShowCheckedModeBanner: false,
+
       // Use AppLocalizations to configure the correct application title
       // depending on the user's locale.
       //
