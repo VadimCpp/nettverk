@@ -4,6 +4,20 @@
 
 Nettverk is a mobile application designed to assist immigrants in Norway with integrating into society through engaging gamification elements. By unifying your existing platforms—borinorge.no, the AI-powered Telegram bot, and the Telegram chats in Oslo and Bergen—the app creates a cohesive community experience that encourages learning, socializing, and active participation in Norwegian life.
 
+## Install and test 
+
+![Skjermbilde 2024-12-18 kl  09 45 43](https://github.com/user-attachments/assets/3de45ac8-2045-47f5-82b0-7643da81104d)
+
+### v1.0.5
+
+Google Play : https://play.google.com/store/apps/details?id=no.tekzence.nettverk <br />
+Apple Store : Rejected
+
+Issues during submission to the App Store: 
+- Guideline 2.1 - Performance - App Completeness:  an error alert when we tried to open a network
+- Guideline 2.3.3 - Performance - Accurate Metadata: some or all of the provided screenshots do not sufficiently show the app in use
+- Guideline 4.2.3 - Design - Minimum Functionality: we were required to install Telegram before we could use your app. Apps should be able to run on launch, without requiring additional apps to be installed.
+
 ## Nettverk MVP Version 1 Proposal
 
 To help you deploy your app as quickly as possible, we'll focus on essential features that can be implemented using your already developed screens: **About Us**, **Home**, **Chats**, and **Settings**. This minimalistic MVP will serve as a foundation for future enhancements while providing immediate value to your community.
